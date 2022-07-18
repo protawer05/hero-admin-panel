@@ -1,49 +1,43 @@
 {
   "heroes": [
     {
-      "id": "196d119c-cfea-41ed-acc6-9550e97714d9",
+      "id": 2,
+      "name": "Неизвестный герой",
+      "description": "Скрывающийся в тени",
+      "element": "wind"
+    },
+    {
+      "id": "b7250d41-e784-4995-bcbd-fed43266dda3",
       "name": "Антон",
-      "description": "Ничего",
-      "element": "fire"
-    },
-    {
-      "id": "40a3a927-87fa-4db4-9da6-14f5047e6cba",
-      "name": "rgegeg",
-      "description": "eqfqfqf",
-      "element": "fire"
-    },
-    {
-      "id": "bbd87131-716b-4126-93ab-2a5e723385c1",
-      "name": "Абобус",
-      "description": "НИЫЦЫИКИАЫ",
-      "element": ""
+      "description": "thrrhrhr",
+      "element": "water"
     }
   ],
   "filters": [
     {
       "name": "all",
       "label": "Все",
-      "classNames": "btn btn-outline-dark"
+      "className": "btn-outline-dark"
     },
     {
       "name": "fire",
       "label": "Огонь",
-      "classNames": "btn btn-danger"
+      "className": "btn-danger"
     },
     {
       "name": "water",
       "label": "Вода",
-      "classNames": "btn btn-primary"
+      "className": "btn-primary"
     },
     {
       "name": "wind",
       "label": "Ветер",
-      "classNames": "btn btn-success"
+      "className": "btn-success"
     },
     {
       "name": "earth",
       "label": "Земля",
-      "classNames": "btn btn-secondary"
+      "className": "btn-secondary"
     }
   ]
 }
