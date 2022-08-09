@@ -1,6 +1,6 @@
-import heroes from '../components/heroesList/heroesSlice';
 import filters from '../components/heroesFilters/filtersSlice';
 import { configureStore } from '@reduxjs/toolkit';
+import { apiSlice } from '../api/apiSlice';
 
 const stringMiddleware = () => (next) => (action) => {
     if (typeof action === 'string'){
@@ -16,8 +16,9 @@ const stringMiddleware = () => (next) => (action) => {
             compose(applyMiddleware(ReduxThunk, stringMiddleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
             ); */
 const store = configureStore({
-    reducer: {heroes, filters},
-    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware),
+    reducer: {filters,
+            [apiSlice.reducerPath]: apiSlice.reducer},
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware, apiSlice.middleware),
     devTools: process.env.NODE_ENV !== 'production',
 })
 
