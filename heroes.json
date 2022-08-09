@@ -7,40 +7,39 @@
       "element": "earth"
     },
     {
-      "id": "c3f01971-bf23-4088-9330-1aa00da63748",
-      "name": "Antonio banderas",
-      "description": "Всё",
+      "id": "69868785-7300-4f09-9e07-b47895c93d6c",
+      "name": "fwfwfwf",
+      "description": "fewfw",
       "element": "wind"
-    },
-    {
-      "id": "191dbd68-ebde-43b1-b5a8-efa4d70ab799",
-      "name": "wfwf",
-      "description": "wfwfwf",
-      "element": "fire"
     }
   ],
   "filters": [
     {
+      "id": "all",
       "name": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },
     {
+      "id": "fire",
       "name": "fire",
       "label": "Огонь",
       "className": "btn-danger"
     },
     {
+      "id": "water",
       "name": "water",
       "label": "Вода",
       "className": "btn-primary"
     },
     {
+      "id": "wind",
       "name": "wind",
       "label": "Ветер",
       "className": "btn-success"
     },
     {
+      "id": "earth",
       "name": "earth",
       "label": "Земля",
       "className": "btn-secondary"
